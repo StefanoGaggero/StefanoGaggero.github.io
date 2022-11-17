@@ -1,8 +1,7 @@
 <html>
   <head>
     <script>
-    queryString = window.location.hash;
-    queryString = quesryString.substring(1);
+    queryString = window.location.hash.substring(1);
     urlParams = new URLSearchParams(queryString);
     tok = urlParams.get('access_token');
     </script>
