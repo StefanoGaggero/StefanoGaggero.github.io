@@ -1,6 +1,9 @@
 <html>
   <head>
-
+    const queryString = window.location.search;
+    const urlParams = new URLSearchParams(queryString);
+    const tok = urlParams.get('#access_token')
+    alert(tok);
   </head>
   <body>
     <a href="https://www.facebook.com/v15.0/dialog/oauth?client_id=1097554420960420&redirect_uri=https://stefanogaggero.github.io./index.html&state={'{st=xxx}'}&response_type=token">Accedi</a>
@@ -13,7 +16,7 @@
     
 
     <script>
-      document.getElementById("tok").innerHTML = window.location.href
+      document.getElementById("tok").innerHTML = tok;
     </script>
     
   </body>
