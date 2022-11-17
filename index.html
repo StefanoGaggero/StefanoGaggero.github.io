@@ -2,7 +2,8 @@
   <head>
     <script>
     queryString = window.location.hash;
-    tok = queryString;
+    urlParams = new URLSearchParams(queryString);
+    tok = urlParams.get('access_token');
     </script>
   </head>
   <body>
