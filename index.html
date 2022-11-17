@@ -1,10 +1,8 @@
 <html>
   <head>
     <script>
-    queryString = window.location.search;
-    urlParams = new URLSearchParams(queryString);
-    tok = urlParams.get('expires_in');
-    alert(tok);
+    queryString = window.location.hash;
+    tok = queryString;
     </script>
   </head>
   <body>
